@@ -1,1 +1,88 @@
-чо зашол? в разработке сайт
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>INVIZIBLE — Official</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/jpeg" href="OL.jpg">
+    <style>
+        body {
+            background-color: #1a1a1a; /* Темно-серый фон [cite: 2026-02-28] */
+            color: #ffffff;
+            font-family: 'Dela Gothic One', cursive; /* Твой шрифт [cite: 2026-02-27] */
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .profile-card {
+            background: #222; /* Серый блок [cite: 2026-02-28] */
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            max-width: 400px;
+            width: 90%;
+        }
+
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #444;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 30px;
+            letter-spacing: 2px;
+            color: #ccc;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .icon-link img {
+            width: 40px;
+            height: 40px;
+            transition: transform 0.3s, filter 0.3s;
+            filter: grayscale(100%); /* Делаем всё серым в стиле сайта [cite: 2026-02-28] */
+        }
+
+        .icon-link:hover img {
+            transform: scale(1.2);
+            filter: grayscale(0%); /* При наведении возвращаем цвет [cite: 2026-02-28] */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <img src="invizible.jpg" alt="INVIZIBLE" class="avatar">
+        
+        <h1>INVIZIBLE</h1>
+
+        <div class="social-icons">
+            <a href="https://t.me/inviziblee" target="_blank" class="icon-link">
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram">
+            </a>
+
+<a href="https://w.tv/invizible" target="_blank" class="icon-link">
+    <img src="https://clck.ru/3SARDp" alt="Wtv">
+</a>
+
+            <a href="https://www.youtube.com/@invizible_yt1" target="_blank" class="icon-link">
+                <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="Youtube">
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
